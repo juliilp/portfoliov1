@@ -1,3 +1,9 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -92,6 +98,8 @@ span {
 footer {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 .container-contacto {
   display: flex;
@@ -101,7 +109,54 @@ footer {
   padding: 3px 100px;
   margin-right: 15px;
   margin-bottom: 10px;
-  gap: 5px;
   border-radius: 30px;
   background-color: #263244;
+}
+
+@media (min-width: 660px) {
+  .yo {
+    padding: 0 69px;
+  }
+}
+
+@media (min-width: 900px) {
+  .yo {
+    padding: 0 100px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .yo {
+    padding: 0 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .yo {
+    padding: 0 200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .yo {
+    padding: 0 250px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .yo {
+    padding: 0 300px;
+  }
+}
+
+@media (min-width: 1800px) {
+  .yo {
+    padding: 0 350px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .yo {
+    padding: 0 380px;
+  }
 }

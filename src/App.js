@@ -17,17 +17,21 @@ function App() {
   return (
     <div className="App">
       <div className="primerSeccion">
-        <br />
         <h2>
           Hola!👋 <br /> <span className="arribanombre">Mi nombre es</span>
           <span className="nombre">Julian Lopez Padua</span>
         </h2>
+        <br />
         <p className="yo">
           Soy Desarollador Web Full Stack, Mi interés se centra en la
-          elaboración de productos de calidad con un buen trabajo en equipo
-          hasta poder cumplir nuestra meta, soy una persona perseverante,
-          comprometida y comunicativa
+          elaboración de productos de calidad con trabajo en equipo hasta poder
+          cumplir nuestra meta, soy una persona perseverante, comprometida,
+          comunicativa y dispuesto a nuevos desafios y aprendizajes. Soy una
+          persona que bajo presión sabe hacer lo necesario para seguir adelante
+          con un buen compañerismo y hacer necesario para poder entregar el
+          final del producto en tiempo y forma.
         </p>
+        <br />
         <div className="container-button">
           <a href="youtube.com" className="cv button ">
             Descargar CV
@@ -87,25 +91,27 @@ function App() {
             <br />
             <SiPostgresql size="2rem" color="#31628B" />
             <span>postgreSQL</span>
-            <br />
           </div>
         </div>
         <br />
-        <br />
         <hr />
       </div>
-      <br />
-      <br />
       <h2 className="misproyectos">Mis Proyectos</h2>
+      <br />
+      <br />
+      <br />
+      <br />
       <main>
         <Card
           repositorio="https://github.com/juliilp/mercadosolidario"
           pagina="https://mercadosolidario.vercel.app/"
           imagen={mercadosolidario}
           titulo="Mercado Solidario"
-          parrafo="Éste proyecto contiene dashboard, sistema de login, auth de terceros, envio de emails, chatbot, Métodos de pago y mucho más "
+          parrafo="Éste proyecto contiene dashboard, sistema de login, implementacion de Api, auth de terceros, envio de emails, chatbot, Métodos de pago y mucho más "
         />
       </main>
+      <br />
+      <br />
       <br />
       <br />
       <hr />
@@ -116,18 +122,18 @@ function App() {
         <br />
         <div className="container-contacto">
           <a href="https://github.com/juliilp" target="blank">
-            <FaGithub size="4em" color="FFF" />
+            <FaGithub size="2.5em" color="FFF" />
           </a>
         </div>
         <div className="container-contacto">
-          <AiOutlineMail size="4em" color="#FFF 0.8" />
+          <AiOutlineMail size="2.5em" color="#FFF 0.8" />
         </div>
         <div className="container-contacto">
           <a
             href="https://www.linkedin.com/in/julian-lopez-7b9746234/"
             target="blank"
           >
-            <AiOutlineLinkedin size="4em" color="FFF" />
+            <AiOutlineLinkedin size="2.5em" color="FFF" />
           </a>
         </div>
       </footer>
