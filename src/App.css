@@ -1,38 +1,107 @@
-.App {
-  text-align: center;
+html {
+  scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+main {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.App {
+  box-sizing: border-box;
+  background-color: #06061a;
+  text-align: center;
+  color: #fefeff;
+  font-weight: 500;
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", Segoe UI Symbol, "Noto Color Emoji";
+}
+span {
+  display: block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.misproyectos {
+  color: rgb(27, 169, 208, 0.9);
+}
+
+.arribanombre {
+  color: rgb(27, 169, 208, 0.9);
+  letter-spacing: 2px;
+}
+.nombre {
+  color: #1ba9d0;
+  letter-spacing: 2px;
+}
+
+.primerSeccion {
+  height: 100vh;
+}
+
+.yo {
+  color: #3c3e4e;
+  color: rgb(130, 90, 130);
+  /* margin: 0 auto; */
+  /* max-width: 40%; */
+}
+
+.container-button {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cv {
+  background-color: #4ee39d;
+  color: #07071c;
+  font-weight: 700;
+}
+
+.contacto {
+  border: 1px solid #4ee39d;
+  color: #4ee39d;
+}
+
+.button {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  width: max-content;
+  padding: 7px 25px;
+  border-radius: 100px;
+  font-weight: 500;
+}
+
+.tecnologias {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.tecnologia {
+  background-color: rgb(14, 15, 35);
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+}
+.container-contacto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 3px 100px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  gap: 5px;
+  border-radius: 30px;
+  background-color: #263244;
 }
