@@ -1,10 +1,10 @@
 .container-card {
   text-decoration: none;
-  border-radius: 10px;
+  border-radius: 20px;
   overflow: hidden;
-  width: 300px;
+  width: 360px;
   height: 100%;
-  background-color: rgb(28, 38, 57);
+  background-color: #2a2a36;
 }
 a {
   text-decoration: none;
@@ -12,21 +12,24 @@ a {
 
 button {
   font-family: "Montserrat", sans-serif;
+  background-color: #f3b9f1;
+  color: #07071c;
 }
 small {
   font-weight: 700;
   display: block;
-  color: rgb(130, 90, 130);
+  color: #eed6ee;
   text-align: center;
 }
 
 .imagen {
+  overflow: auto;
   width: 80%;
   height: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: none;
-  border-radius: 10px;
+
   padding-top: 20px;
   transition: 0.3s ease;
   cursor: pointer;
@@ -37,7 +40,7 @@ small {
 }
 
 h4 {
-  color: #1ba9d0;
+  color: #f795f7;
 }
 
 .misproyectos {
@@ -59,10 +62,7 @@ h4 {
   letter-spacing: 2px;
   background-color: none;
   height: 2em;
-  background-color: rgb(17, 16, 35);
-  color: rgba(200, 200, 200);
   padding: 15px 20px;
-  border: 2px solid #056ea6;
   font-weight: 600;
   text-align: center;
 }
@@ -71,14 +71,11 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(17, 16, 35);
-  color: rgba(200, 200, 200);
   border-radius: 6px;
   letter-spacing: 2px;
   height: 2em;
   border: none;
   padding: 15px 20px;
-  border: 2px solid #056ea6;
   font-weight: 600;
   text-align: center;
 }

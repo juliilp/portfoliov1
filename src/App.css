@@ -21,7 +21,7 @@ footer {
 }
 .App {
   box-sizing: border-box;
-  background-color: #06061a;
+  background-color: #1a1a24;
   text-align: center;
   color: #fefeff;
   font-weight: 500;
@@ -35,21 +35,21 @@ span {
 
 .misproyectos {
   margin: 35px 0;
-  color: rgb(27, 169, 208, 0.9);
+  color: #f795f7;
 }
 
 .arribanombre {
-  color: rgb(27, 169, 208, 0.9);
+  color: #f795f7;
   letter-spacing: 2px;
 }
 .nombre {
-  color: #1ba9d0;
+  font-family: "Inconsolata", monospace;
+  color: #f795f7;
   letter-spacing: 2px;
 }
 
 .yo {
-  color: #3c3e4e;
-  color: rgb(130, 90, 130);
+  color: #eed6ee;
   /* margin: 0 auto; */
   /* max-width: 40%; */
 }
@@ -60,14 +60,15 @@ span {
 }
 
 .cv {
-  background-color: #4ee39d;
+  background-color: #efd6ee;
   color: #07071c;
   font-weight: 700;
 }
 
 .contacto {
+  background-color: #efd6ee;
   border: 1px solid #4ee39d;
-  color: #4ee39d;
+  color: #07071c;
 }
 
 .button {
@@ -87,7 +88,7 @@ span {
 }
 
 .tecnologia {
-  background-color: rgb(14, 15, 35);
+  background-color: #2a2a36;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -108,7 +109,7 @@ footer {
   margin-right: 15px;
   margin-bottom: 10px;
   border-radius: 30px;
-  background-color: #263244;
+  background-color: #2a2a36;
 }
 
 @media (min-width: 660px) {

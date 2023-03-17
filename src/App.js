@@ -18,8 +18,8 @@ function App() {
     <div className="App">
       <div className="primerSeccion">
         <h2>
-          Hola!👋 <br /> <span className="arribanombre">Mi nombre es</span>
-          <span className="nombre">Julian Lopez Padua</span>
+          Hola!👋
+          <span className="nombre"> Soy Julian Lopez Padua</span>
         </h2>
         <br />
         <p className="yo">
@@ -45,14 +45,14 @@ function App() {
           <div className="tecnologia">
             <br />
             <div className="html">
-              <SiHtml5 size="2rem" color="#C40000" />
+              <SiHtml5 size="2rem" color="#D84E64" />
             </div>
             <span>Html</span>
             <br />
           </div>
           <div className="tecnologia">
             <br />
-            <SiCss3 size="2rem" color="#0000C8" />
+            <SiCss3 size="2rem" color="#6781FA" />
             <span>Css</span>
             <br />
           </div>

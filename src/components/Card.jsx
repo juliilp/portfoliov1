@@ -12,6 +12,8 @@ export default function Card({
   return (
     <div className="container-card">
       <img className="imagen" src={imagen} alt="imagen" />
+      <br />
+      <br />
       <h4>{titulo}</h4>
       <h5 className="resumen">{resumen}</h5>
       <small>{parrafo}</small>
