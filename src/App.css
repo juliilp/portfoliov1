@@ -100,6 +100,7 @@ footer {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  padding: 0 30px;
 }
 .container-contacto {
   display: flex;
