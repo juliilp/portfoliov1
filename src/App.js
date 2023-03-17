@@ -23,13 +23,12 @@ function App() {
         </h2>
         <br />
         <p className="yo">
-          Soy Desarollador Web Full Stack, Mi interés se centra en la
-          elaboración de productos de calidad con trabajo en equipo hasta poder
-          cumplir nuestra meta, soy una persona perseverante, comprometida,
-          comunicativa y dispuesto a nuevos desafios y aprendizajes. Soy una
-          persona que bajo presión sabe hacer lo necesario para seguir adelante
-          con un buen compañerismo y hacer necesario para poder entregar el
-          final del producto en tiempo y forma.
+          Soy Desarollador Web Full Stack. Me gusta trabajar en equipo, en un
+          ambiente de compañerismo, buena comunicación e ideales de visión
+          compartida para cumplir con lo requerido. Soy perseverante,
+          comprometido, organizado, comunicativo y estoy dispuesto a nuevos
+          desafios y aprendizajes. La presión no es un obstáculo para mí a la
+          hora de cumplir con mis responsabilidades y metas.
         </p>
         <br />
         <div className="container-button">
