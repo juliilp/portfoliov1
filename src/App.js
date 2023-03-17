@@ -93,7 +93,6 @@ function App() {
             <span>postgreSQL</span>
           </div>
         </div>
-        <br />
         <hr />
       </div>
       <h2 className="misproyectos">Mis Proyectos</h2>
