@@ -51,6 +51,10 @@ h4 {
 }
 
 .repo {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   transition: 0.3s ease;
   background-color: #efd6ee;
   display: flex;
@@ -67,6 +71,10 @@ h4 {
 }
 
 .pagina {
+  font-weight: 700;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   transition: 0.3s ease;
   background-color: #efd6ee;
   display: flex;
@@ -80,7 +88,9 @@ h4 {
   font-weight: 600;
   text-align: center;
 }
-
+a {
+  font-weight: 700;
+}
 .imagen:hover,
 .pagina:hover,
 .repo:hover {

@@ -106,7 +106,7 @@ function App() {
           pagina="https://mercadosolidario.vercel.app/"
           imagen={mercadosolidario}
           titulo="Mercado Solidario"
-          parrafo="Éste proyecto contiene dashboard, sistema de login, implementacion de Api, auth de terceros, envio de emails, chatbot, Métodos de pago y mucho más "
+          parrafo="Este proyecto contiene dashboard, sistema de Log-In, implementación de Api, auth de terceros, envío de e-mails, chatbot, métodos de pago y mucho más."
         />
       </main>
       <br />

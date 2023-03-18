@@ -26,7 +26,7 @@ export default function Card({
       <div className="container-botones">
         <button className="pagina">
           <a href={pagina} target="blank">
-            Pagina Web
+            Página Web
           </a>
         </button>
         <button className="repo">
