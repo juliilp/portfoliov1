@@ -1,6 +1,8 @@
 import "./App.css";
 import Card from "./components/Card";
 import mercadosolidario from "./imagenes/mercadosolidario.png";
+import videogames from "./imagenes/videojuegos.png";
+import food from "./imagenes/food.png";
 import {
   SiExpress,
   SiPostgresql,
@@ -17,6 +19,8 @@ function App() {
   return (
     <div className="App">
       <div className="primerSeccion">
+        <br />
+        <br />
         <h2>
           Hola!👋
           <span className="nombre"> Soy Julian Lopez Padua</span>
@@ -99,7 +103,7 @@ function App() {
       <br />
       <br />
       <br />
-      <main>
+      <main className="container-cards">
         <Card
           urlImagen="https://mercadosolidario.vercel.app/"
           repositorio="https://github.com/juliilp/mercadosolidario"
@@ -107,6 +111,21 @@ function App() {
           imagen={mercadosolidario}
           titulo="Mercado Solidario"
           parrafo="Este proyecto contiene dashboard, sistema de Log-In, implementación de Api, auth de terceros, envío de e-mails, chatbot, métodos de pago y mucho más."
+        />
+        <Card
+          urlImagen="#"
+          repositorio="https://github.com/juliilp/Pi-videojuegos"
+          pagina="#"
+          imagen={videogames}
+          titulo="Website VideoGames"
+          parrafo="Este proyecto fue realizado de una manera individual, con una api externa y realizando su propia base de datos, backend y frontend"
+        />
+        <Card
+          urlImagen="#"
+          repositorio="https://github.com/juliilp/Pi-Food"
+          imagen={food}
+          titulo="Website Food"
+          parrafo="Este proyecto fue realizado de una manera individual, con una api externa y realizando su propia base de datos, backend y frontend"
         />
       </main>
       <br />
