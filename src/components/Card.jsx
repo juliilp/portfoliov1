@@ -8,10 +8,13 @@ export default function Card({
   resumen,
   repositorio,
   pagina,
+  urlImagen,
 }) {
   return (
     <div className="container-card">
-      <img className="imagen" src={imagen} alt="imagen" />
+      <a href={urlImagen} target="blank">
+        <img className="imagen" src={imagen} alt="imagen" />
+      </a>
       <br />
       <br />
       <h4>{titulo}</h4>
@@ -21,12 +24,17 @@ export default function Card({
       <br />
       <br />
       <div className="container-botones">
-        <a href={pagina} target="blank">
-          <button className="pagina">Pagina Web</button>
-        </a>
-        <a href={repositorio} target="blank">
-          <button className="repo">Repositorio</button>
-        </a>
+        <button className="pagina">
+          <a href={pagina} target="blank">
+            Pagina Web
+          </a>
+        </button>
+        <button className="repo">
+          <a href={repositorio} target="blank">
+            {" "}
+            Repositorio{" "}
+          </a>
+        </button>
       </div>
       <br />
     </div>

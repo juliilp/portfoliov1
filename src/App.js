@@ -101,6 +101,7 @@ function App() {
       <br />
       <main>
         <Card
+          urlImagen="https://mercadosolidario.vercel.app/"
           repositorio="https://github.com/juliilp/mercadosolidario"
           pagina="https://mercadosolidario.vercel.app/"
           imagen={mercadosolidario}

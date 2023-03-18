@@ -67,18 +67,22 @@ span {
 
 .contacto {
   background-color: #efd6ee;
-  border: 1px solid #4ee39d;
   color: #07071c;
 }
 
 .button {
+  transition: 0.3s ease;
+  cursor: pointer;
   text-align: center;
-  text-decoration: none;
   display: block;
   width: max-content;
   padding: 7px 25px;
   border-radius: 100px;
   font-weight: 500;
+}
+
+a {
+  cursor: pointer;
 }
 
 .tecnologias {
@@ -110,6 +114,10 @@ footer {
   margin-bottom: 10px;
   border-radius: 30px;
   background-color: #2a2a36;
+}
+
+a:hover {
+  transform: scale(1.1);
 }
 
 @media (min-width: 660px) {
