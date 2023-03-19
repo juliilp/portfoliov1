@@ -15,6 +15,7 @@ import {
 } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineLinkedin } from "react-icons/ai";
+import ContactoEmail from "./components/contactoEmail/ContactoEmail";
 function App() {
   return (
     <div className="App">
@@ -132,7 +133,7 @@ function App() {
       <br />
       <br />
       <br />
-      <hr />
+      <ContactoEmail />
       <footer id="contacto">
         <br />
         <br />
