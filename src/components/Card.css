@@ -68,6 +68,7 @@ h4 {
   padding: 15px 20px;
   font-weight: 600;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .pagina {

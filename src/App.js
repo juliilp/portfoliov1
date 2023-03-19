@@ -97,7 +97,6 @@ function App() {
             <span>postgreSQL</span>
           </div>
         </div>
-        <hr />
       </div>
       <h2 className="misproyectos">Mis Proyectos</h2>
       <br />
@@ -105,6 +104,14 @@ function App() {
       <br />
       <br />
       <main className="container-cards">
+        <Card
+          urlImagen="#"
+          repositorio="https://github.com/juliilp/Pi-videojuegos"
+          pagina="#"
+          imagen={videogames}
+          titulo="Website VideoGames"
+          parrafo="Este proyecto fue realizado de una manera individual, con una api externa y su propia base de datos, backend y frontend"
+        />
         <Card
           urlImagen="https://mercadosolidario.vercel.app/"
           repositorio="https://github.com/juliilp/mercadosolidario"
@@ -115,18 +122,10 @@ function App() {
         />
         <Card
           urlImagen="#"
-          repositorio="https://github.com/juliilp/Pi-videojuegos"
-          pagina="#"
-          imagen={videogames}
-          titulo="Website VideoGames"
-          parrafo="Este proyecto fue realizado de una manera individual, con una api externa y realizando su propia base de datos, backend y frontend"
-        />
-        <Card
-          urlImagen="#"
           repositorio="https://github.com/juliilp/Pi-Food"
           imagen={food}
           titulo="Website Food"
-          parrafo="Este proyecto fue realizado de una manera individual, con una api externa y realizando su propia base de datos, backend y frontend"
+          parrafo="Este proyecto fue realizado de una manera individual, con una api externa y su propia base de datos, backend y frontend"
         />
       </main>
       <br />

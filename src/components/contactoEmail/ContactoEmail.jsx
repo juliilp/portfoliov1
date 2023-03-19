@@ -39,7 +39,7 @@ export default function ContactoEmail() {
   };
   return (
     <div className="main-container">
-      <h3 className="contactemonos">Contactemonos !</h3>
+      <h3 className="contactemonos">Contactémonos!</h3>
       <br />
       <br />
       <input
