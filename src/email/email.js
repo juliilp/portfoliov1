@@ -6,7 +6,7 @@ const emailPost = async (nombre, correo, mensaje, apellido) => {
   // http://localhost:3001/email
   try {
     const emailapi = await axios.post(
-      "https://portfolio-backend-wine.vercel.app/email",
+      "https://portfolio-backend-production-7d94.up.railway.app/",
       {
         nombre,
         correo,
