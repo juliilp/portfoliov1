@@ -94,27 +94,3 @@
     height: 225px;
   }
 }
-
-@media (min-width: 700px) {
-  .textarea-mensaje {
-    width: 475px;
-  }
-}
-
-@media (min-width: 750px) {
-  .textarea-mensaje {
-    width: 500px;
-  }
-}
-
-@media (min-width: 800px) {
-  .textarea-mensaje {
-    width: 525px;
-  }
-}
-
-@media (min-width: 850px) {
-  .textarea-mensaje {
-    width: 550px;
-  }
-}
