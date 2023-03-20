@@ -1,9 +1,14 @@
 .main-container {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nombre-apellido {
+  display: flex;
   flex-wrap: wrap;
 }
-
 .contactemonos {
   letter-spacing: 2px;
   color: #f795f7;
@@ -14,13 +19,15 @@
   border-radius: 20px;
   font-size: 18px;
   letter-spacing: 0.8px;
-  margin: 0 0 8px;
-  width: 100%;
+  width: 300px;
   padding: 18px 26px;
+  margin: 0px auto;
+  margin-bottom: 8px;
 }
 
 .textarea-mensaje {
   font-size: 18px;
+  margin-bottom: 8px;
   resize: vertical;
   line-height: inherit;
   border: 1px solid hsla(0, 0%, 100%, 0.5);
@@ -28,8 +35,9 @@
   margin: 0 auto;
   font-size: 18px;
   letter-spacing: 0.8px;
-  margin: 0 0 8px;
-  width: 100%;
+  margin: 0 auto 8px;
+  width: 300px;
+  height: 150px;
   padding: 18px 26px;
 }
 
@@ -51,4 +59,62 @@
   text-align: center;
   margin: 0 auto;
   font-weight: 700;
+}
+.container-inputs-textarea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+@media (min-width: 500px) {
+  .input-usuario {
+    width: 350px;
+    margin: 0 auto 8px;
+  }
+  .textarea-mensaje {
+    width: 375px;
+    height: 200px;
+    margin: 0 auto 8px;
+  }
+}
+
+@media (min-width: 570px) {
+  .input-usuario {
+    padding: 18px 26px;
+  }
+}
+
+@media (min-width: 600px) {
+  .input-usuario {
+    width: 390px;
+  }
+  .textarea-mensaje {
+    width: 425px;
+    height: 225px;
+  }
+}
+
+@media (min-width: 700px) {
+  .textarea-mensaje {
+    width: 475px;
+  }
+}
+
+@media (min-width: 750px) {
+  .textarea-mensaje {
+    width: 500px;
+  }
+}
+
+@media (min-width: 800px) {
+  .textarea-mensaje {
+    width: 525px;
+  }
+}
+
+@media (min-width: 850px) {
+  .textarea-mensaje {
+    width: 550px;
+  }
 }

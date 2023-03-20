@@ -38,39 +38,41 @@ export default function ContactoEmail() {
     }
   };
   return (
-    <div className="main-container">
+    <div>
       <h3 className="contactemonos">Contactémonos!</h3>
-      <br />
-      <br />
-      <input
-        name="nombre"
-        value={user.nombre}
-        placeholder="Nombre"
-        className="input-usuario"
-        onChange={userHandler}
-      />
-      <input
-        name="apellido"
-        value={user.apellido}
-        placeholder="Apellido"
-        className="input-usuario"
-        onChange={userHandler}
-      />
-      <input
-        name="email"
-        type="email"
-        value={user.email}
-        placeholder="Email"
-        onChange={userHandler}
-        className="input-usuario"
-      />
-      <textarea
-        name="mensaje"
-        className="textarea-mensaje"
-        value={user.mensaje}
-        placeholder="Mensaje"
-        onChange={userHandler}
-      />
+      <div className="main-container">
+        <br />
+        <br />
+        <input
+          name="nombre"
+          value={user.nombre}
+          placeholder="Nombre"
+          className="input-usuario nombre-contacto"
+          onChange={userHandler}
+        />
+        <input
+          name="apellido"
+          value={user.apellido}
+          placeholder="Apellido"
+          className="input-usuario apellido"
+          onChange={userHandler}
+        />
+        <input
+          name="email"
+          type="email"
+          value={user.email}
+          placeholder="Email"
+          onChange={userHandler}
+          className="input-usuario email "
+        />
+        <textarea
+          name="mensaje"
+          className="textarea-mensaje mensaje "
+          value={user.mensaje}
+          placeholder="Mensaje"
+          onChange={userHandler}
+        />
+      </div>
       <button className="enviar-mensaje" onClick={buttonHandler}>
         Enviar Mensaje
       </button>
