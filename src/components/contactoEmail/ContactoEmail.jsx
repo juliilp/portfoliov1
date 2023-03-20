@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
+import "./ContactoEmail.css";
 export default function ContactoEmail() {
   const [user, setUser] = useState({
     user_name: "",
@@ -29,37 +30,43 @@ export default function ContactoEmail() {
   };
 
   return (
-    <div className="div-form">
-      <h1 className="title-form">Contact Us</h1>
-      <form className="form-mail" onSubmit={sendEmail}>
-        <label>Nombre</label>
-        <input
-          type="text"
-          name="user_name"
-          onChange={sendEmail}
-          value={user.user_name}
-        />
-        <hr />
+    <div>
+      <h1 className="title-form">Contactemonos!</h1>
+      <div className="div-form">
+        <form className="form-mail" onSubmit={sendEmail}>
+          <div className="contenedor-contacto">
+            <label>Nombre</label>
+            <input
+              className="input-inside"
+              type="text"
+              name="user_name"
+              onChange={sendEmail}
+              value={user.user_name}
+            />
 
-        <label>Email</label>
-        <input
-          type="email"
-          name="user_email"
-          onChange={sendEmail}
-          value={user.user_email}
-        />
-        <hr />
+            <label>Email</label>
+            <input
+              className="input-inside"
+              type="email"
+              name="user_email"
+              onChange={sendEmail}
+              value={user.user_email}
+            />
 
-        <label>Mensaje</label>
-        <textarea
-          onChange={sendEmail}
-          name="user_message"
-          id=""
-          value={user.user_message}
-        ></textarea>
-        <hr />
-        <button>Enviar</button>
-      </form>
+            <label>Mensaje</label>
+            <textarea
+              className="textarea-inside"
+              onChange={sendEmail}
+              name="user_message"
+              id=""
+              value={user.user_message}
+              placeholder="Deja aqui tu mensaje"
+            />
+
+            <button>Enviar</button>
+          </div>
+        </form>
+      </div>
     </div>
   );
 }
