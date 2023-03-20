@@ -12,6 +12,11 @@ const emailPost = async (nombre, correo, mensaje, apellido) => {
         correo,
         mensaje,
         apellido,
+      },
+      {
+        headers: {
+          "Content-Type": "application/json; charset=utf-8",
+        },
       }
     );
     return emailapi;
