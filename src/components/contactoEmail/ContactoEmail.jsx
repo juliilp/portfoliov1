@@ -1,81 +1,65 @@
 import React, { useState } from "react";
-import emailPost from "../../email/email";
-import "./ContactoEmail.css";
+import emailjs from "@emailjs/browser";
 export default function ContactoEmail() {
   const [user, setUser] = useState({
-    nombre: "",
-    apellido: "",
-    email: "",
-    mensaje: "",
+    user_name: "",
+    user_email: "",
+    user_message: "",
   });
-
-  const userHandler = (e) => {
+  const sendEmail = (event) => {
+    event.preventDefault();
     setUser({
       ...user,
-      [e.target.name]: e.target.value,
+      [event.target.name]: event.target.value,
+    });
+    emailjs
+      .sendForm(
+        "service_htfa0cg",
+        "template_2te83ed",
+        event.target,
+        "muR_rneTUlOkLDPRR"
+      )
+      .then((response) => console.log(response))
+      .catch((error) => console.log(error));
+    setUser({
+      user_name: "",
+      user_email: "",
+      user_message: "",
     });
   };
-  console.log(user);
 
-  const buttonHandler = () => {
-    if (!user.email.includes("@")) {
-      alert("Email incorrecto");
-    } else if (user.email.length <= 15) {
-      alert("Verifique su email");
-    } else if (user.nombre.length < 3) {
-      alert("Su nombre mínimo debe contener 3 letras");
-    } else if (user.apellido.length < 3) {
-      alert("Su apellido mínimo debe contener 3 letras");
-    } else {
-      emailPost(user.nombre, user.email, user.mensaje, user.apellido);
-      alert("Mensaje con éxito");
-      setUser({
-        nombre: "",
-        apellido: "",
-        email: "",
-        mensaje: "",
-      });
-    }
-  };
   return (
-    <div>
-      <h3 className="contactemonos">Contactémonos!</h3>
-      <div className="main-container">
-        <br />
-        <br />
+    <div className="div-form">
+      <h1 className="title-form">Contact Us</h1>
+      <form className="form-mail" onSubmit={sendEmail}>
+        <label>Nombre</label>
         <input
-          name="nombre"
-          value={user.nombre}
-          placeholder="Nombre"
-          className="input-usuario nombre-contacto"
-          onChange={userHandler}
+          type="text"
+          name="user_name"
+          onChange={sendEmail}
+          value={user.user_name}
         />
+        <hr />
+
+        <label>Email</label>
         <input
-          name="apellido"
-          value={user.apellido}
-          placeholder="Apellido"
-          className="input-usuario apellido"
-          onChange={userHandler}
-        />
-        <input
-          name="email"
           type="email"
-          value={user.email}
-          placeholder="Email"
-          onChange={userHandler}
-          className="input-usuario email "
+          name="user_email"
+          onChange={sendEmail}
+          value={user.user_email}
         />
+        <hr />
+
+        <label>Mensaje</label>
         <textarea
-          name="mensaje"
-          className="textarea-mensaje mensaje "
-          value={user.mensaje}
-          placeholder="Mensaje"
-          onChange={userHandler}
-        />
-      </div>
-      <button className="enviar-mensaje" onClick={buttonHandler}>
-        Enviar Mensaje
-      </button>
+          onChange={sendEmail}
+          name="user_message"
+          id=""
+          value={user.user_message}
+        ></textarea>
+        <hr />
+        <button>Enviar</button>
+      </form>
     </div>
   );
 }
