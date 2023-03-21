@@ -16,6 +16,7 @@ import {
 import { FaGithub } from "react-icons/fa";
 import { AiOutlineMail, AiOutlineLinkedin } from "react-icons/ai";
 import ContactoEmail from "./components/contactoEmail/ContactoEmail";
+import CardDisf from "./components/CardDisf";
 function App() {
   return (
     <div className="App">
@@ -104,10 +105,10 @@ function App() {
       <br />
       <br />
       <main className="container-cards">
-        <Card
+        <CardDisf
           urlImagen="#"
           repositorio="https://github.com/juliilp/Pi-videojuegos"
-          pagina="#"
+          pagina=""
           imagen={videogames}
           titulo="Website VideoGames"
           parrafo="Este proyecto fue realizado de una manera individual, con una api externa y su propia base de datos, backend y frontend"
@@ -120,8 +121,9 @@ function App() {
           titulo="Mercado Solidario"
           parrafo="Este proyecto contiene dashboard, sistema de Log-In, implementación de Api, auth de terceros, envío de e-mails, chatbot, métodos de pago y mucho más."
         />
-        <Card
+        <CardDisf
           urlImagen="#"
+          pagina=""
           repositorio="https://github.com/juliilp/Pi-Food"
           imagen={food}
           titulo="Website Food"
