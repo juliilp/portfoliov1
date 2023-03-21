@@ -5,13 +5,15 @@ textarea {
   width: 100%;
   height: 40px;
   border-radius: 0.375rem;
-  margin-bottom: 5px;
 }
 input,
 textarea {
   padding: 0.375rem 0.75rem;
 }
 
+label {
+  margin-top: 5px;
+}
 textarea {
   resize: none;
   height: 75px;
@@ -31,11 +33,16 @@ button:hover {
   transform: scale(1.1);
 }
 
+.boton-contactoemail {
+  margin: 20px 0;
+}
+
 .contenedor-contacto {
   width: 70%;
 }
 .title-form {
   color: #f795f7;
+  margin-bottom: 50px;
 }
 .form-mail {
   width: 100%;

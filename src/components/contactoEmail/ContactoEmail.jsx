@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./ContactoEmail.css";
+import Swal from "sweetalert2";
 export default function ContactoEmail() {
   const [user, setUser] = useState({
     user_name: "",
@@ -22,6 +23,10 @@ export default function ContactoEmail() {
       )
       .then((response) => console.log(response))
       .catch((error) => console.log(error));
+    Swal.fire({
+      icon: "success",
+      title: "Mensaje enviado con éxito",
+    });
     setUser({
       user_name: "",
       user_email: "",
@@ -42,6 +47,7 @@ export default function ContactoEmail() {
               name="user_name"
               onChange={sendEmail}
               value={user.user_name}
+              required
             />
 
             <label>Email</label>
@@ -51,6 +57,7 @@ export default function ContactoEmail() {
               name="user_email"
               onChange={sendEmail}
               value={user.user_email}
+              required
             />
 
             <label>Mensaje</label>
@@ -61,6 +68,7 @@ export default function ContactoEmail() {
               id=""
               value={user.user_message}
               placeholder="Deja aqui tu mensaje"
+              required
             />
 
             <button>Enviar</button>
