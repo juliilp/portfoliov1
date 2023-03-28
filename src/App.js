@@ -40,7 +40,7 @@ function App() {
         <br />
         <div className="container-button">
           <a href={cv} className="cv button" target="blank">
-            Descargar CV
+            Ver CV
           </a>
           <br />
           <a href="#contacto" className="contacto button ">
