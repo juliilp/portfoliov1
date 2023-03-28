@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import mercadosolidario from "./imagenes/mercadosolidario.png";
 import videogames from "./imagenes/videojuegos.png";
 import food from "./imagenes/food.png";
+import cv from "./CV.pdf";
 import {
   SiExpress,
   SiPostgresql,
@@ -38,7 +39,7 @@ function App() {
         </p>
         <br />
         <div className="container-button">
-          <a href="./CV.pdf" className="cv button" target="_blank">
+          <a href={cv} className="cv button" target="blank">
             Descargar CV
           </a>
           <br />
