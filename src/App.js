@@ -38,7 +38,7 @@ function App() {
         </p>
         <br />
         <div className="container-button">
-          <a href="youtube.com" className="cv button ">
+          <a href="./CV.pdf" className="cv button" target="_blank">
             Descargar CV
           </a>
           <br />
