@@ -106,10 +106,10 @@ function App() {
       <br />
       <br />
       <main className="container-cards">
-        <CardDisf
+        <Card
           urlImagen="#"
-          repositorio="https://github.com/juliilp/Pi-videojuegos"
-          pagina=""
+          repositorio="https://github.com/juliilp/Project-Videogames"
+          pagina="https://videogames-pi-lyart.vercel.app/"
           imagen={videogames}
           titulo="Website VideoGames"
           parrafo="Este proyecto fue realizado de una manera individual, con una api externa y su propia base de datos, backend y frontend"
@@ -122,10 +122,10 @@ function App() {
           titulo="Mercado Solidario"
           parrafo="Este proyecto contiene dashboard, sistema de Log-In, implementación de Api, auth de terceros, envío de e-mails, chatbot, métodos de pago y mucho más."
         />
-        <CardDisf
+        <Card
           urlImagen="#"
-          pagina=""
-          repositorio="https://github.com/juliilp/Pi-Food"
+          pagina="https://project-food-two.vercel.app/home"
+          repositorio="https://github.com/juliilp/Project-Food"
           imagen={food}
           titulo="Website Food"
           parrafo="Este proyecto fue realizado de una manera individual, con una api externa y su propia base de datos, backend y frontend"
