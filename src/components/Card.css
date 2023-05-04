@@ -1,7 +1,6 @@
 .container-card {
   text-decoration: none;
   border-radius: 20px;
-  overflow: hidden;
   width: 360px;
   height: 405px;
   background-color: #2a2a36;
@@ -23,14 +22,17 @@ small {
   text-align: center;
 }
 
+.container-img{
+  overflow: hidden;
+}
+
 .imagen {
-  overflow: auto;
   width: 80%;
   height: 50%;
   background-size: cover;
   background-repeat: no-repeat;
   background-image: none;
-
+  border-radius: 5px;
   padding-top: 20px;
   transition: 0.3s ease;
   cursor: pointer;

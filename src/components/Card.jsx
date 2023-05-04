@@ -12,7 +12,7 @@ export default function Card({
 }) {
   return (
     <div className="container-card">
-      <a href={urlImagen} target="blank">
+      <a href={urlImagen} target="blank" className="container-img" >
         <img className="imagen" src={imagen} alt="imagen" />
       </a>
       <br />

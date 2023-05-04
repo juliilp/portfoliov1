@@ -3,6 +3,7 @@ import Card from "./components/Card";
 import mercadosolidario from "./imagenes/mercadosolidario.png";
 import videogames from "./imagenes/videojuegos.png";
 import food from "./imagenes/food.png";
+import gigabyteGallery from './imagenes/gigabyte-gallery.png'
 import cv from "./CV.pdf";
 import {
   SiExpress,
@@ -123,12 +124,20 @@ function App() {
           parrafo="Este proyecto contiene dashboard, sistema de Log-In, implementación de Api, auth de terceros, envío de e-mails, chatbot, métodos de pago y mucho más."
         />
         <Card
-          urlImagen="#"
+          urlImagen="https://project-food-two.vercel.app/home"
           pagina="https://project-food-two.vercel.app/home"
           repositorio="https://github.com/juliilp/Project-Food"
           imagen={food}
           titulo="Website Food"
           parrafo="Este proyecto fue realizado de una manera individual, con una api externa y su propia base de datos, backend y frontend"
+        />
+        <Card 
+        urlImagen="https://gigabyte-gallery.vercel.app/"
+        pagina="https://gigabyte-gallery.vercel.app/"
+        repositorio="https://github.com/juliilp/Gigabyte-Gallery"
+        imagen={gigabyteGallery}
+        titulo="Gigabyte-Gallery"
+        parrafo="Este proyecto fue realizado para poner en practica una navbar con menu hamburguesa, framer-motion, carrousel, componentes en css y desktop first"
         />
       </main>
       <br />
