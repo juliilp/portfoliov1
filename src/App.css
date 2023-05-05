@@ -102,6 +102,12 @@ a {
   cursor: pointer;
 }
 
+.zustand-icon{
+  object-fit: cover;
+  width: 2.5rem;
+  height: 2rem;
+}
+
 footer {
   display: flex;
   flex-wrap: wrap;

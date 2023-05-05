@@ -3,12 +3,14 @@ import Card from "./components/Card";
 import mercadosolidario from "./imagenes/mercadosolidario.png";
 import videogames from "./imagenes/videojuegos.png";
 import food from "./imagenes/food.png";
+import imgZustand from './imagenes/favicon.ico'
 import gigabyteGallery from './imagenes/gigabyte-gallery.png'
 import cv from "./CV.pdf";
 import {
   SiExpress,
   SiPostgresql,
   SiJavascript,
+  SiTypescript,
   SiReact,
   SiRedux,
   SiHtml5,
@@ -72,6 +74,12 @@ function App() {
           </div>
           <div className="tecnologia">
             <br />
+            <SiTypescript size="2rem" color="#2F74C0" />
+            <span>Typescript</span>
+            <br />
+          </div>
+          <div className="tecnologia">
+            <br />
             <SiReact size="2rem" color="#60DBFB" />
             <span>React</span>
             <br />
@@ -80,6 +88,12 @@ function App() {
             <br />
             <SiRedux size="2rem" color="#7249B7" />
             <span>Redux</span>
+            <br />
+          </div>
+          <div className="tecnologia">
+            <br />
+            <img src={imgZustand} alt="img-zustand" className="zustand-icon" />
+            <span>Zustand</span>
             <br />
           </div>
           <div className="tecnologia">
